@@ -9,7 +9,7 @@ import useLocalStorage from './hooks'
 
 const App = () => {
 
-  const [contacts, setContacts] = useLocalStorage('cont', '');
+  const [contacts, setContacts] = useLocalStorage('contacts', '');
 
   const [filter, setFilter] = useState('');
 
@@ -51,21 +51,6 @@ const App = () => {
     return contacts.filter(contact => contact.name.toLowerCase().includes(normalizeFilter));
   }
   
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (this.state.contacts !== prevState.contacts) {
-  //     localStorage.setItem('contacts', JSON.stringify(this.state.contacts))
-  //   }
-  // }
-
-  // componentDidMount() {
-  //   const contacts = localStorage.getItem('contacts');
-  //   const parseContacts = JSON.parse(contacts);
-  //   if (parseContacts) {
-  //     this.setState({contacts: parseContacts})
-  //   }
-  // }
-  
-    
     const visibleContacts = getVisibleContacts()
    
      return (
@@ -82,6 +67,33 @@ const App = () => {
   
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // class App extends Component {
 //   state = {
