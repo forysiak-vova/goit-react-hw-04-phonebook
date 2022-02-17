@@ -73,7 +73,7 @@ Form.propTypes = {
  onSubmit: PropTypes.func.isRequired,
 }
 
-
+export default Form;
 
 
 
@@ -141,4 +141,3 @@ Form.propTypes = {
 // }
 
 
-export default Form;

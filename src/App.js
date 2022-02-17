@@ -12,11 +12,6 @@ const App = () => {
   const [contacts, setContacts] = useLocalStorage('contacts', '');
 
   const [filter, setFilter] = useState('');
-
-  // useEffect(() => {
-  //   window.localStorage.setItem('cont', JSON.stringify(contacts))
-    
-  // },[contacts])
   
   const formSubmitHandler =({name,number}) => {
    
